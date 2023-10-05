@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)/**
-		*main: entry point
-		*returns: 0
+		*main - entry point
+		*Return: 0 if successful
 		**/
 {
 	puts("\"Programming is like building a multilingual puzzle");
