@@ -7,7 +7,7 @@
   *main - prints answers to simple calculations
   *@argc: count of arguments
   *@argv:vector of arguments
-  *Result: Always 0
+  *Return: Always 0
   */
 
 int main(int argc, char *argv[])

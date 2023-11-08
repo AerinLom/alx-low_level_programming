@@ -33,10 +33,10 @@ int op_sub(int a, int b)
 }
 
 /**
-  *op_mul - function that multiplies 2 integers
+  *op_mul - multiplies 2 integers
   *@a: first integer
   *@b: second integer
-  @Return: multiplication of a and b
+  *@Return: the product of a and b
   */
 
 int op_mul(int a, int b)
