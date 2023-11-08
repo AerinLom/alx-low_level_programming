@@ -33,16 +33,17 @@ int op_sub(int a, int b)
 }
 
 /**
-  *op_mul - multiplies 2 integers
-  *@a: first integer
-  *@b: second integer
-  *@Return: the product of a and b
-  */
-
+ * op_mul - Returns the product of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ *
+ * Return: The product of a and b.
+ */
 int op_mul(int a, int b)
 {
-	return (a * b);
+		return (a * b);
 }
+
 
 /**
   *op_div - function that divides 2 integers
