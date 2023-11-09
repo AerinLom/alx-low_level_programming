@@ -7,8 +7,6 @@
   *@separator: separator between strings
   *@n: number of strings
   *@...:strings to be printed
-  *Description: If separator is NULL, it is not printed
-  *	If one of the strings if NULL, (nil) is printed instead.
   */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -22,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		out = va_arg(str, char *);
-		if (str == NULL)
+		if (out == NULL)
 			printf("(nil)");
 		else
 			printf("%s", out);
