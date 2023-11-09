@@ -23,26 +23,23 @@ void print_all(const char * const format, ...)
 		{
 			switch (format[r])
 			{
-				case 's':
+			case 's':
 				string = va_arg(all, char *);
 				if (!string)
 					string = "(nil)";
 				printf("%s%s", separate, string);
 				break;
-
-				case 'c':
+			case 'c':
 				printf("%s%c", separate, va_arg(all, int));
 				break;
-
-				case 'i':
+			case 'i':
 				printf("%s%d", separate, va_arg(all, int));
 				break;
-
-				case 'f':
+			case 'f':
 				printf("%s%f", separate, va_arg(all, double));
 				break;
 
-				default:
+			default:
 				r++;
 				continue;
 			}
