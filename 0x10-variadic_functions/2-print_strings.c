@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
-  *print_strings - function that prints strings
+  *print_strings - prints strings then a new line
   *@separator: separator between strings
   *@n: number of strings
   *@...:strings to be printed
@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		out = va_arg(str, char*);
+		out = va_arg(str, char *);
 		if (str == NULL)
 			printf("(nil)");
 		else
