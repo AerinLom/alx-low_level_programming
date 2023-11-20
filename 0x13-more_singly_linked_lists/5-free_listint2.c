@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 
 	binned_list = *head;
 
-	if (binned_list == NULL)
+	if (head == NULL)
 		return;
 
 	while (binned_list != NULL)
@@ -20,5 +20,5 @@ void free_listint2(listint_t **head)
 		free(binned_list);
 		binned_list = list_iter;
 	}
-	*head = NULL;
+	head = NULL;
 }

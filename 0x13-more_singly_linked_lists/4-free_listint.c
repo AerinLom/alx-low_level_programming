@@ -8,7 +8,7 @@
 void free_listint(listint_t *head)
 {
 	listint_t *bin_node, *skip_node;
-	
+
 	bin_node = head;
 
 	while (bin_node != NULL)
