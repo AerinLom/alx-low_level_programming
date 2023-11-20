@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	if (head == NULL)
 		return;
 
-	while (*head)
+	while (*head != NULL)
 	{
 		list_iter = (*head)->next;
 		free(*head);
