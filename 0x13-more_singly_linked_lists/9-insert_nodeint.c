@@ -15,10 +15,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	if (inserted_node == NULL)
 	{
+		free(inserted_node);
 		return (NULL);
 	}
 	if (*head == NULL)
 	{
+		free(inserted_node);
 		return (NULL);
 	}
 	inserted_node->n = n;
