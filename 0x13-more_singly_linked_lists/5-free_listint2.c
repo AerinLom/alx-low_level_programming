@@ -11,6 +11,9 @@ void free_listint2(listint_t **head)
 
 	binned_list = *head;
 
+	if (binned_list == NULL)
+		return;
+
 	while (binned_list != NULL)
 	{
 		list_iter = binned_list->next;
