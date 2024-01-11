@@ -9,9 +9,9 @@
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	listint_t *added_node;
+	dlistint_t *added_node;
 
-	added_node = malloc(sizeof(listint_t));
+	added_node = malloc(sizeof(dlistint_t));
 
 	if (added_node == NULL)
 	{
