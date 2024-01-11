@@ -23,7 +23,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (*head == NULL)
 	{
+		tail_node->prev = NULL;
 		*head = tail_node;
+		return tail_node;
 	}
 
 	else
@@ -36,7 +38,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		}
 
 		nav_node->next = tail_node;
+		tail_node->prev = nav_node
 	}
 
-	return (*head);
+	return (tail_node);
 }
