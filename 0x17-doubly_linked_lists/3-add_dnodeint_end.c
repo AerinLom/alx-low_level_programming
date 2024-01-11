@@ -38,7 +38,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		}
 
 		nav_node->next = tail_node;
-		tail_node->prev = nav_node
+		tail_node->prev = nav_node;
 	}
 
 	return (tail_node);
