@@ -17,7 +17,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-
 	position = key_index((const unsigned char *)key, ht->size);
 	swap = ht->array[position];
 
@@ -27,7 +26,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(swap->value);
 			swap->value = strdup(value);
-			
 			if (swap->value == NULL)
 			{
 				return (0);
