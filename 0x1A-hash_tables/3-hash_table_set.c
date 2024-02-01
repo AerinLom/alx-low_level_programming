@@ -15,17 +15,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *copied_data = strdup(value);
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
-	{
 		return (0);
-	}
 	if (copied_data == NULL)
 	{
 		return (0);
 	}
-
 	position = key_index((const unsigned char *)key, ht->size);
 	swap = ht->array[position];
-
 	while (swap != NULL)
 	{
 		if (strcmp(swap->key, key) == 0)
